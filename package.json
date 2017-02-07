@@ -1,0 +1,28 @@
+{
+  "name": "myleetcode",
+  "version": "1.0.0",
+  "description": "记录在leetcode上刷题的答案",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "mocha": "^3.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhangFe/myLeetCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhangFe/myLeetCode/issues"
+  },
+  "homepage": "https://github.com/ZhangFe/myLeetCode#readme"
+}
