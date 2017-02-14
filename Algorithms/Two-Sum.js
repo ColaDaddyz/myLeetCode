@@ -21,3 +21,5 @@ var twoSum = function (nums, target) {
     }
     return [pre, next]
 };
+
+module.exports = twoSum;
