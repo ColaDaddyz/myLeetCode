@@ -9,13 +9,13 @@ var reverse = function (x) {
     var intStr = "" + (minuZero ? -x : x);
     var reverseStr = intStr.split('').reverse().join('');
     var reverseInt = parseInt(reverseStr);
-    if(reverseInt)
-        if(minuZero){
+    if (reverseInt)
+        if (minuZero) {
             reverseInt = -reverseInt
         }
-    if(reverseInt<min || reverseInt>max){
+    if (reverseInt < min || reverseInt > max) {
         return 0
     }
     return reverseInt
 };
-console.log(reverse(0));
+module.exports = reverse;
