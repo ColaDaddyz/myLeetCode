@@ -17,23 +17,30 @@ var longestCommonPrefix = function (strs) {
             return ''
         }
         if (!minStr) {
-            minStr = str[i]
+            minStr = str
         }
         if (minStr.length > str.length) {
             minStr = str;
         }
     }
+    var answer = '';
+    var arrLength = strs.length;
     for (var j = 0; j < minStr.length; j++) {
-        for (var k = 0; k++; k < strs.length) {
-            //如果匹配到了，continue
-            if (strs[k].indexOf(minStr)) {
-
-            } else { //未匹配到直接break return了
+        var thisSub = minStr.substring(0, j + 1);
+        for (var k = 0; k < arrLength; k++) {
+            //如果未匹配到 break
+            if (strs[k].indexOf(thisSub) !== 0) {
                 break;
             }
-
+        }
+        //如果未遍历完整个数组，即当前不是公共子串，break;
+        if (k !== arrLength) {
+            break;
+        } else {
+            answer = thisSub;
         }
     }
+    return answer;
 };
 
 module.exports = longestCommonPrefix;
