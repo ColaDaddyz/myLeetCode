@@ -3,7 +3,6 @@
  */
 require('should');
 var longestCommonPrefix = require('../Algorithms/Longest-Common-Prefix');
-console.log(longestCommonPrefix(['123', '12']));
 describe('longestCommonPrefix', function () {
     it('有非string', function () {
         longestCommonPrefix(["123", 1]).should.be.eql('')

@@ -9,3 +9,4 @@ var lengthOfLastWord = function (s) {
     var splitArr = s.trim().split(/\s+/);
     return splitArr.slice(-1)[0].length
 };
+module.exports = lengthOfLastWord;
