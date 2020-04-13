@@ -7,5 +7,7 @@ describe('LCP', function() {
     it("正常case", function() {
         LCP(["a"]).should.be.eql("a")
     });
-
+    it("正常case", function() {
+        LCP(["flower", "flow", "flight"]).should.be.eql("fl")
+    });
 });
