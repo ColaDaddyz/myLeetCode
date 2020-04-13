@@ -3,10 +3,12 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function (nums, target) {
-    var pre = 0, next = 0;
+var twoSum = function(nums, target) {
+    var returnArr = [];
+    var pre = 0,
+        next = 0;
     var obj = {};
-    nums.forEach(function (item, index) {
+    nums.forEach(function(item, index) {
         obj[item] = index + 1;
     });
     for (var i = 0; i < nums.length; i++) {
@@ -19,7 +21,7 @@ var twoSum = function (nums, target) {
             break;
         }
     }
-    return [pre, next]
+    return [pre, next - 1]
 };
 
 module.exports = twoSum;
